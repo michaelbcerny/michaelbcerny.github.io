@@ -3,58 +3,28 @@ layout: default
 title: Home
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-<style>
-    .welcome {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-    }
-
-    .profile img {
-      width: 800px; /* Large width to ensure visibility */
-      height: auto; /* Maintain aspect ratio */
-      margin-top: 0;
-      border-radius: 50px; /* Larger radius to check if it's being applied */
-      padding: 50px; /* Check if padding affects the display */
-      border: 3px solid red; /* Add a border to see the outline clearly */
-    }
-
-    @media (max-width: 800px) {
-      .welcome {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .profile img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        object-position: center;
-        margin-bottom: 20px;
-        margin-right: 0;
-      }
-    }
-</style>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="welcome">
-      <div class="profile">
-        <img src="michael-cerny.jpeg" alt="Photo of Michael Cerny">
-      </div>
-      <div class="text">
-        <h1>Hello!!!</h1>
-        <p>I am an incoming Ph.D. student in the Department of Government at Harvard University. I was previously a Program Associate in the Office of the Vice President, Peace Programs at <a href="https://cartercenter.org">The Carter Center</a>.</p>
-        <p>You can contact me at <a href="michael_cerny@g.harvard.edu">michael_cerny@g.harvard.edu</a>.</p>
-
-      </div>
+        <div class="profile">
+            <img src="michael-cerny.jpeg" alt="Photo of Michael Cerny">
+        </div>
+        <div class="text">
+            <h1>Hello!</h1>
+            <p>I am an incoming Ph.D. student in the Department of Government at Harvard University. I was previously a Program Associate in the Office of the Vice President, Peace Programs at <a href="https://cartercenter.org">The Carter Center</a>.</p>
+            <p>You can contact me at <a href="mailto:michael_cerny@g.harvard.edu">michael_cerny@g.harvard.edu</a>.</p>
+        </div>
     </div>
 </body>
 </html>
+
 
 <div class="posts">
   {% for post in paginator.posts %}
