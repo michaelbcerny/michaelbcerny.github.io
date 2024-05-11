@@ -11,38 +11,36 @@ body {
 
 .welcome {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     padding: 20px;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
 .profile {
-    flex: 0 0 50%; /* Allocates 50% of the space to the profile, does not grow or shrink */
-    display: flex;
-    justify-content: center;
+    flex: 1;  /* Allows the image container to take up half of the available space */
     padding: 20px;
+    display: flex;
+    justify-content: center;  /* Centers the image within the profile container */
 }
 
 .profile img {
-    max-width: 90%; /* Allows some padding space */
+    width: 100%;  /* Makes the image fill the profile container */
+    max-width: 300px;  /* Limits how large the image can grow */
     height: auto;
     border-radius: 25px;
 }
 
 .text {
-    flex: 1; /* Allows the text block to take the remaining space */
+    flex: 1;  /* Allows the text container to take up the remaining space */
     padding: 20px;
-    max-width: 50%; /* Ensures it does not take more than 50% */
 }
 
 @media (max-width: 1024px) {
     .welcome {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column;  /* Stacks the image and text vertically on smaller screens */
     }
 
     .profile, .text {
-        max-width: 100%; /* Full width on smaller screens */
+        max-width: 100%;
+        padding: 10px;
     }
 }
