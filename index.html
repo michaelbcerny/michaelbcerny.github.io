@@ -15,9 +15,13 @@ title: Home
         justify-content: center; /* Centers the flex container */
         padding: 0px;
     }
-    .profile, .text {
-        flex: 1; /* Allows the image and text to take equal width */
-        padding-right: 20px;
+    .profile {
+        flex: 0 1 30%; /* Flex-grow, Flex-shrink, Flex-basis */
+        padding-right: 0;
+    }
+    .text {
+        flex: 0 1 70%; /* Adjusts the basis to take up more space */
+        padding-left: 0;
     }
     .profile img {
         max-width: 75%;
