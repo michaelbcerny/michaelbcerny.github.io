@@ -9,35 +9,39 @@ title: Home
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-      <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+        color: #333;
+    }
+    .welcome {
+        display: flex;
+        justify-content: center; /* Centers the flex container */
+        padding: 20px;
+    }
+    .profile, .text {
+        flex: 1; /* Allows the image and text to take equal width */
+        padding: 20px;
+    }
+    .profile img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 25px;
+        margin-top: 0; /* Aligns the top of the image with the container */
+    }
+    @media (max-width: 768px) {
         .welcome {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        .profile, .text {
-            flex: 1;
-            padding: 20px;
+            flex-direction: column;
+            align-items: center; /* Centers the items when stacked */
         }
         .profile img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 25px;
+            margin-top: 20px; /* Adds a top margin on smaller screens for better spacing */
         }
-        @media (max-width: 768px) {
-            .welcome {
-                flex-direction: column;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
     <div class="welcome">
