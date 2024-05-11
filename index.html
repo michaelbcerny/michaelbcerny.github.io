@@ -15,12 +15,22 @@ title: Home
           justify-content: flex-start; 
         }
 
+
         .profile img {
-          width: 650px; /* Set the width of the image */
+          width: 500px; /* Set the width of the image */
           height: auto; /* Maintain aspect ratio */
-          margin-right: 30px; /* Increase space to the right of the image */
-          padding: 15px; /* Adds padding around the image */
+          margin-right: 30px; /* Space to the right of the image */
+          margin-top: 0; /* Ensure no top margin on the image */
+          padding: 10px; /* Adds padding around the image */
+          border-radius: 15px; /* Rounds the corners of the image */
+          border: 1px solid #ccc; /* Optional: Adds a subtle border */
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds shadow for depth */
         }
+    
+        .text h1 {
+          margin-top: 0; /* Removes top margin from the heading */
+        }
+
 
         @media (max-width: 800px) {
           .welcome {
