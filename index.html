@@ -9,7 +9,35 @@ title: Home
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/michaelbcerny/michaelbcerny.github.io/master/public/css/styles.css">
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .welcome {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .profile, .text {
+            flex: 1;
+            padding: 20px;
+        }
+        .profile img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 25px;
+        }
+        @media (max-width: 768px) {
+            .welcome {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="welcome">
