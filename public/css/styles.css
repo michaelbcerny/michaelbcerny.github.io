@@ -17,27 +17,32 @@ body {
     flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
+.profile {
+    flex: 0 0 50%; /* Allocates 50% of the space to the profile, does not grow or shrink */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 .profile img {
-    max-width: 100%;
+    max-width: 90%; /* Allows some padding space */
     height: auto;
     border-radius: 25px;
-    margin: 20px;
 }
 
 .text {
-    max-width: 500px;
-    margin: 20px;
-    flex-grow: 1; /* Allows the text block to expand */
+    flex: 1; /* Allows the text block to take the remaining space */
+    padding: 20px;
+    max-width: 50%; /* Ensures it does not take more than 50% */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .welcome {
         flex-direction: column;
         align-items: center;
     }
 
     .profile, .text {
-        max-width: 100%;
-        text-align: center;
+        max-width: 100%; /* Full width on smaller screens */
     }
 }
