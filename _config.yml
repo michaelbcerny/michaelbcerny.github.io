@@ -1,7 +1,7 @@
 # Setup
 title:               Michael B. Cerny
 tagline:             'Harvard University'
-description:         'Michael B. Cerny&#39s Website.'
+description:         'Michael B. Cerny&#39s website.'
 url:                 https:://michaelbcerny.github.io/
 baseurl:             ''
 paginate:            5
