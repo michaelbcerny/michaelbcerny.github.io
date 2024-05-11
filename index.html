@@ -5,7 +5,7 @@ title: Home
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>About Me</title>
 <style>
@@ -16,12 +16,16 @@ title: Home
     }
 
     .profile img {
-      width: 500px; /* Set the width of the image */
+      width: 600px; /* Set the width of the image */
       height: auto; /* Maintain aspect ratio */
       margin-right: 30px; /* Space to the right of the image */
       margin-top: 0; /* Ensure no top margin on the image */
-      padding: 25px; /* Adds padding around the image */
+      padding: 15px; /* Adds padding around the image */
       border-radius: 25px; /* Rounds the corners of the image */
+    }
+
+    .text {
+      padding: 15px; /* Adds padding around the text */
     }
 
     @media (max-width: 600px) {
@@ -30,18 +34,24 @@ title: Home
         align-items: center; /* Center align items when stacked */
       }
 
+      .profile, .text {
+        width: 100%; /* Full width of the container */
+        padding: 15px; /* Uniform padding */
+        box-sizing: border-box; /* Includes padding and border in the element's width and height */
+      }
+
       .profile img {
         width: 100%; /* Full width of the container */
-        height: 200px; /* Fixed height to maintain landscape aspect */
+        height: auto; /* Maintain aspect ratio */
         object-fit: cover; /* Crop to maintain aspect without distorting */
         object-position: center 25%; /* Adjust vertical positioning to focus higher */
-        margin-bottom: 20px; /* Adds space below the image when stacked */
-        margin-right: 0;
+        margin: 0; /* No margin for the image */
+        border-radius: 25px; /* Maintain rounded corners */
       }
-    }
-
-    .text h1 {
-      margin-top: 0; /* Removes top margin from the heading */
+      
+      .text h1 {
+        margin-top: 0; /* Removes top margin from the heading */
+      }
     }
 </style>
 </head>
@@ -53,14 +63,11 @@ title: Home
       <div class="text">
         <h1>Hey!</h1>
         <p>I am an incoming Ph.D. student in the Department of Government at Harvard University. I was previously a Program Associate in the Office of the Vice President, Peace Programs at <a href="https://cartercenter.org">The Carter Center</a>.</p>
-        <p>You can contact me at <a href="michael_cerny@g.harvard.edu">michael_cerny@g.harvard.edu</a>.</p>
-
+        <p>You can contact me at <a href="mailto:michael_cerny@g.harvard.edu">michael_cerny@g.harvard.edu</a>.</p>
       </div>
     </div>
 </body>
 </html>
-
-
 
 <div class="posts">
   {% for post in paginator.posts %}
