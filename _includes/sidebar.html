@@ -18,11 +18,10 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-
-    <!-- Additional static link to the About page -->
+    
     <a class="sidebar-nav-item{% if page.title == 'About' %} active{% endif %}" href="/about/">About</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+    <a class="sidebar-nav-item{% if page.title == 'About' %} active{% endif %}" href="/publications/">About</a>
+    
     <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 
