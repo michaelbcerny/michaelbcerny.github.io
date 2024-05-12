@@ -4,6 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
+<img src="https://michaelbcerny.github.io/capitol-reef.jpeg" alt="Descriptive Alt Text" style="width:100%; height: auto;">
+
 <p class="message">
   To download the latest version of my Curriculum Vitae, please <a href="michaelbcerny.github.io/michael-cerny.jpeg">click here</a>.
 </p>
