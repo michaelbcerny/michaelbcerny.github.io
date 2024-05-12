@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,39 +12,39 @@
 <style>
     .welcome {
         display: flex;
-        justify-content: center;
+        justify-content: center; /* Centers the flex container */
         padding: 0px;
     }
     .profile {
-        flex: 0 1 30%;
+        flex: 0 1 30%; /* Flex-grow, Flex-shrink, Flex-basis */
         padding-right: 20px;
     }
     .text {
-        flex: 0 1 70%;
+        flex: 0 1 70%; /* Adjusts the basis to take up more space */
         padding-left: 0;
     }
     .text h1 {
-      margin-top: 0;
-    }
+      margin-top: 0; /* Reduces the top margin to zero. Adjust this value to find the desired spacing. */
+  }
     .section-divider {
       border: 0;
       height: 1px;
-      background-color: #ccc;
-      margin: 20px 0;
-    }
+      background-color: #ccc; /* Light grey color */
+      margin: 20px 0; /* Adds vertical space around the line */
+  }
     .profile img {
         max-width: 100%;
         height: auto;
         border-radius: 25px;
-        margin-top: 0;
+        margin-top: 0; /* Aligns the top of the image with the container */
     }
     @media (max-width: 768px) {
         .welcome {
             flex-direction: column;
-            align-items: center;
+            align-items: center; /* Centers the items when stacked */
         }
         .profile img {
-            margin-top: 20px;
+            margin-top: 20px; /* Adds a top margin on smaller screens for better spacing */
         }
     }
 </style>
@@ -49,13 +54,31 @@
         <div class="profile">
             <img src="michael-cerny.jpeg" alt="Photo of Michael Cerny">
         </div>
-       <div class="text">
+        <div class="text">
             <h1>Hello!</h1>
             <p>I am an incoming Ph.D. student in the Department of Government at Harvard University. I was previously a Program Associate in the Office of the Vice President, Peace Programs at <a href="https://cartercenter.org">The Carter Center</a>.</p>
             <p>You can email me at <a href="mailto:michael_cerny@g.harvard.edu">michael_cerny@g.harvard.edu</a> or follow me <a href="https://twitter.com/michaelbcerny">@michaelbcerny</a>.</p>
         </div>
     </div>
+</body>
+</html>
+
+</div> 
 <hr class="section-divider">
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
