@@ -26,6 +26,12 @@ title: Home
     .text h1 {
       margin-top: 0; /* Reduces the top margin to zero. Adjust this value to find the desired spacing. */
   }
+    .section-divider {
+      border: 0;
+      height: 1px;
+      background-color: #ccc; /* Light grey color */
+      margin: 20px 0; /* Adds vertical space around the line */
+  }
     .profile img {
         max-width: 100%;
         height: auto;
@@ -57,7 +63,10 @@ title: Home
 </body>
 </html>
 
-</div> <!>
+<hr class="section-divider">
+<div class="posts">
+
+</div> 
 <hr class="section-divider">
 <div class="posts">
   {% for post in paginator.posts %}
