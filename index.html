@@ -16,18 +16,20 @@ title: Home
         padding: 0px;
     }
     .profile {
-        flex: 0 1 30%; /* Flex-grow, Flex-shrink, Flex-basis */
-        padding-right: 20px;
+        flex: 0 1 auto; /* Adjust flex settings as needed */
+        align-self: stretch; /* Stretch along the cross axis */
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
     }
     .text {
         flex: 0 1 70%; /* Adjusts the basis to take up more space */
         padding-left: 0;
     }
     .profile img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 25px;
-        margin-top: 0; /* Aligns the top of the image with the container */
+        height: 100%; /* Set height to fill the container */
+        max-width: none; /* Override max-width if set previously */
+        object-fit: cover; /* Crop and cover the area without stretching */
     }
     @media (max-width: 768px) {
         .welcome {
