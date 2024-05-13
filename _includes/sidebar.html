@@ -1,30 +1,34 @@
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
 <!-- Toggleable sidebar -->
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+<div class="sidebar" id="sidebar" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+  <div>
+    <div class="sidebar-item">
+      <p>{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="/">Home</a>
+      <a class="sidebar-nav-item{% if page.title == 'About' %} active{% endif %}" href="/about/">About</a>
+      <!-- Add more links manually here -->
+      <!-- <a class="sidebar-nav-item{% if page.title == 'Contact' %} active{% endif %}" href="/contact/">Contact</a> -->
+      <!-- <a class="sidebar-nav-item{% if page.title == 'Blog' %} active{% endif %}" href="/blog/">Blog</a> -->
+
+      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    </nav>
   </div>
 
-  <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="/">Home</a>
-    <a class="sidebar-nav-item{% if page.title == 'About' %} active{% endif %}" href="/about/">About</a>
-    <!-- Add more links manually here -->
-    <!-- <a class="sidebar-nav-item{% if page.title == 'Contact' %} active{% endif %}" href="/contact/">Contact</a> -->
-    <!-- <a class="sidebar-nav-item{% if page.title == 'Blog' %} active{% endif %}" href="/blog/">Blog</a> -->
+  <div>
+    <div class="sidebar-item">
+      <p>
+        Jekyll theme made by <a href="https://twitter.com/mdo?lang=en">@mdo</a>.
+      </p>
+    </div>
 
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
-  </nav>
-
-  <div class="sidebar-item">
-    <p>
-      Jekyll theme made by <a href="https://twitter.com/mdo?lang=en">@mdo</a>.
-    </p>
-  </div>
-  
-  <div class="sidebar-item">
-    <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-    </p>
+    <div class="sidebar-item">
+      <p>
+        &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+      </p>
+    </div>
   </div>
 </div>
