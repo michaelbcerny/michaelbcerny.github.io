@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-<figure style="margin: 0; padding-bottom: 5px; line-height: 0;">
+<figure style="margin: 0; padding-bottom: 15px; line-height: 0;">
   <img src="https://michaelbcerny.github.io/cerny-capitol-reef.jpeg" alt="Descriptive Alt Text" style="width:100%; height: auto; display: block;">
   <figcaption style="color: lightgrey; text-align: right; font-size: 75%; margin-top: 0; padding-top: 0;">Photo by Michael Cerny, Capitol Reef National Park, July 2023.</figcaption>
 </figure>
