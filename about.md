@@ -6,7 +6,7 @@ permalink: /about/
 
 <figure>
   <img src="https://michaelbcerny.github.io/cerny-capitol-reef.jpeg" alt="Capitol Reef National Park, Michael Cerny, 2023." style="width:100%; height: auto;">
-  <figcaption>Photo by Michael Cerny, Capitol Reef National Park, July 2023.</figcaption>
+  <figcaption style="color: lightgrey;">Photo by Michael Cerny, Capitol Reef National Park, July 2023.</figcaption>
 </figure>
 
 <p class="message">
