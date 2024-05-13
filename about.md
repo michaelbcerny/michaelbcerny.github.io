@@ -6,8 +6,9 @@ permalink: /about/
 
 <figure style="margin: 0;">
   <img src="https://michaelbcerny.github.io/cerny-capitol-reef.jpeg" alt="Descriptive Alt Text" style="width:100%; height: auto; display: block;">
-  <figcaption style="color: lightgrey; text-align: center;">Photo by [Photographer's Name] on [Platform or Website]</figcaption>
+  <figcaption style="color: lightgrey; text-align: center;">Photo by Michael Cerny, Capitol Reef National Park, July 2023.</figcaption>
 </figure>
+
 <p class="message">
   To download the latest version of my Curriculum Vitae, please <a href="michaelbcerny.github.io/michael-cerny.jpeg">click here</a>.
 </p>
