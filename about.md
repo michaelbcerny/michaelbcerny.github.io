@@ -4,7 +4,12 @@ title: About Me
 permalink: /about/
 ---
 
-<img src="https://michaelbcerny.github.io/cerny-capitol-reef.jpeg" alt="Capitol Reef National Park, Michael Cerny, 2023." style="width:100%; height: auto;">
+<img src="https://michaelbcerny.github.io/cerny-capitol-reef.jpeg" alt="" style="width:100%; height: auto;">
+
+<figure>
+  <img src="https://michaelbcerny.github.io/cerny-capitol-reef.jpeg" alt="Capitol Reef National Park, Michael Cerny, 2023." style="width:100%; height: auto;">
+  <figcaption>Photo by Michael Cerny, Capitol Reef National Park, July 2023.>
+</figure>
 
 <p class="message">
   To download the latest version of my Curriculum Vitae, please <a href="michaelbcerny.github.io/michael-cerny.jpeg">click here</a>.
