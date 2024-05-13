@@ -1,9 +1,8 @@
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
 <!-- Toggleable sidebar -->
-<div class="sidebar" id="sidebar" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-  <div style="margin-bottom: 20px;"> 
-  <div>
+<div class="sidebar" id="sidebar" style="display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
+  <div style="flex: 1;">  <!-- This div will grow to take up available space, pushing the footer down -->
     <div class="sidebar-item">
       <p>{{ site.description }}</p>
     </div>
@@ -11,21 +10,22 @@
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="/">Home</a>
       <a class="sidebar-nav-item{% if page.title == 'About' %} active{% endif %}" href="/about/">About</a>
-      <!-- Add more links manually here -->
-      <!-- <a class="sidebar-nav-item{% if page.title == 'Contact' %} active{% endif %}" href="/contact/">Contact</a> -->
-      <!-- <a class="sidebar-nav-item{% if page.title == 'Blog' %} active{% endif %}" href="/blog/">Blog</a> -->
+      <!-- Additional links can be added here -->
+      <!-- Example: <a class="sidebar-nav-item{% if page.title == 'Contact' %} active{% endif %}" href="/contact/">Contact</a> -->
+      <!-- Example: <a class="sidebar-nav-item{% if page.title == 'Blog' %} active{% endif %}" href="/blog/">Blog</a> -->
 
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
   </div>
 
-  <div>
+  <div> <!-- This div will stay at the bottom -->
     <div class="sidebar-item">
       <p>
-        Jekyll theme made by <a href="https://twitter.com/mdo?lang=en">@mdo</a>. &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-
+        Jekyll theme made by <a href="https://twitter.com/mdo?lang=en">@mdo</a>.
+      </p>
+      <p>
+        &copy; {{ site.time | date: '%Y' }}. All rights reserved.
       </p>
     </div>
-    
   </div>
 </div>
