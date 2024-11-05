@@ -16,17 +16,3 @@ I am a Ph.D. student in the Department of Government at Harvard University. I wa
 </p>
 
 To get in touch, you can email me at <a href="mailto:michael_cerny@g.harvard.edu">michael_cerny@g.harvard.edu</a> or follow me on X/Twitter <a href="https://twitter.com/michaelbcerny">@michaelbcerny</a>.
-
-<style>
-a {
-        color: #a51c30; /* Harvard Crimson */
-        text-decoration: none; /* Optional: remove underline */
-    }
-
-    /* Change link color on hover */
-a:hover {
-        color: #801521; /* Darker shade for hover, adjust as needed */
-        text-decoration: underline; /* Optional: add underline on hover */
-    }
-  
-</style>
