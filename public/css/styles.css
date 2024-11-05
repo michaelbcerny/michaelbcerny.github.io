@@ -44,3 +44,13 @@ body {
         padding: 10px;
     }
 }
+.container a, .sidebar a, .masthead-title a, .post-title a {
+    color: #a51c30 !important;
+    text-decoration: none;
+}
+
+/* Optional: Change color on hover */
+.container a:hover, .sidebar a:hover, .masthead-title a:hover, .post-title a:hover {
+    color: #801521 !important; /* Darker Crimson for hover */
+    text-decoration: underline;
+}
