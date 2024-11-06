@@ -56,16 +56,3 @@ body {
     color: #801521 !important; /* Darker Crimson for hover */
     text-decoration: underline;
 }
-.sidebar {
-    color: rgba(255, 255, 255, 0.6); /* Light gray color */
-}
-
-/* Ensure sidebar links inherit the light gray color */
-.sidebar a {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-/* Optional: Hover effect for sidebar links */
-.sidebar a:hover {
-    color: rgba(255, 255, 255, 0.8); /* Slightly lighter gray on hover */
-}
