@@ -299,7 +299,7 @@ a.sidebar-nav-item:focus {
 .page,
 .post {
   margin-bottom: 4em;
-  font-size: 16px; /* Adjust this to make the text smaller */
+  font-size: 20px; /* Adjust this to make the text smaller */
   line-height: 1.6; /* Optional: Adjust line height for readability */
 }
 
