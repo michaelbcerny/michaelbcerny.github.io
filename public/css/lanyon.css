@@ -321,7 +321,7 @@ a.sidebar-nav-item:focus {
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
-  font-size: 12px; /* Make the date text smaller */
+  font-size: 16px; /* Make the date text smaller */
 }
 
 /* Related posts */
