@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Working Paper: Under Pressure"
+title: "Working Paper: Attitudes Towards China Among American Foreign Policy Professionals."
 date: 2024-12-09
 ---
 
