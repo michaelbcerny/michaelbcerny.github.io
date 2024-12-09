@@ -14,29 +14,33 @@ date: 2024-12-09
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            font-size: 16px;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 800px;
         }
         .title {
             font-size: 24px;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         .subtitle {
             font-size: 20px;
             font-style: italic;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .body-text {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         .link {
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             color: #a51c30; /* Harvard Crimson */
             text-decoration: none;
         }
         .link:hover {
             text-decoration: underline;
+            color: #801521; /* Slightly darker crimson */
         }
     </style>
 </head>
@@ -65,3 +69,4 @@ date: 2024-12-09
     </div>
 </body>
 </html>
+
