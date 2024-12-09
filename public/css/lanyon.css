@@ -308,7 +308,7 @@ a.sidebar-nav-item:focus {
 .post-title,
 .post-title a {
   color: #303030;
-  font-size: 20px; /* Reduce the title size if needed */
+  font-size: 25px; /* Reduce the title size if needed */
 }
 .page-title,
 .post-title {
