@@ -11,14 +11,15 @@ How do career and reputational concerns affect China policy discourse within the
 
 <div style="margin-top: 20px;">
   <a href="https://static1.squarespace.com/static/61362c444f878116b514ec49/t/675727b4207f395589a26608/1733765044455/Executive+Summary+-+Under+Pressure+.pdf" 
-     style="display: inline-block; background-color: crimson; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+     style="display: inline-block; background-color: #A51C30; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
      Read the Executive Summary
   </a>
 </div>
 
 <div style="margin-top: 10px;">
   <a href="https://static1.squarespace.com/static/61362c444f878116b514ec49/t/675727341f3f295563cd8a47/1733764917153/Cerny+%26+Truex+%282024%29+-+Working+Paper+-+Under+Pressure.pdf" 
-     style="display: inline-block; background-color: crimson; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+     style="display: inline-block; background-color: #A51C30; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
      Read the Working Paper
   </a>
 </div>
+
